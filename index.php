@@ -11,10 +11,23 @@
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 		<!--  -->
+		<!-- internal css -->
+		<style type="text/css">
+			body{padding-top: 100px;}
+			#dp-img-small{width:30px; height: 30px;}
+			.work_icons{height:50px;}
+			.social_icons{height:50px;}
+		</style>
 
-		<!-- Css files -->
-		<link rel="stylesheet" type="text/css" href="./css/index.css">
-		<!--  -->
+		<!-- google analytics code -->
+		<script type="text/JavaScript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-63599833-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 
 	</head>
 	<body>
