@@ -74,6 +74,27 @@
 							Hello readers, my name is Anshul Sahni, I am currently studying B.Tech in SRM University, I am a programmer, web developer, server administrator and I also love to design database structure for applications in short I am a computer geek who likes to explore technology and develops applications to ease the life of people.
 						</div>
 					</div>
+					<div class='panel panel-primary'>
+						<div class='panel-heading'>
+							A Quick Glance To What I Do
+						</div>
+						<div class='panel-body'>
+							<table class='table'>
+								<tr>
+									<td> <a href="http://zerorush.xyz/archive/dragndrop" target="_blank">DragnDropCaptcha</a> </td>
+									<td> A latest and emerging captcha technique</td>
+								</tr>
+								<tr>
+									<td> <a href="http://zerorush.xyz/archive/it.in" target="_blank">ITAssociation</a> </td>
+									<td> Simple and basic website for department club of my college </td>
+								</tr>
+								<tr>
+									<td> <a href="http://zerorush.xyz/archive/findsim" target="_blank">FindSim</a> </td>
+									<td> Portal to determine the best sim network available in a particular network </td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</div>
 				<div class='col-md-1'></div>
 			</div>
