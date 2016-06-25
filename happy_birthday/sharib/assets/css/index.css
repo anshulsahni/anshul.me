@@ -1,0 +1,7 @@
+body, html { height: 100%; }
+.site-wrapper,
+.inner-site-wrapper {
+  height: 100%; width: 100%;
+}
+.site-wrapper { display: table; }
+.inner-site-wrapper { display: table-cell; vertical-align: middle; }
