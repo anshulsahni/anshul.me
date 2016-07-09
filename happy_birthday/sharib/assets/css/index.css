@@ -5,3 +5,11 @@ body, html { height: 100%; }
 }
 .site-wrapper { display: table; }
 .inner-site-wrapper { display: table-cell; vertical-align: middle; }
+
+.hard { background: pink !important; }
+.page {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0FA0EC), color-stop(4%, wheat)) 0 4px;
+  -webkit-background-size: 100% 20px;
+}
+
+.front-page { background-image: url('../imgs/book_cover.jpg'); background-size: cover; }
