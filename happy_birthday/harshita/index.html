@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Happy Birthday Harshita</title>
+
+  <script type="text/javascript" src = 'vendor/scripts/jquery.min.js'></script>
+  <script type="text/javascript" src = 'vendor/scripts/turn.min.js'></script>
+
+  <style type="text/css">
+    body, html { height: 100%; padding: 0; margin: 0; }
+    body { overflow: hidden; }
+    .site-wrapper,
+    .inner-site-wrapper {
+      height: 100%; width: 100%;
+    }
+    .site-wrapper { display: table; }
+    .inner-site-wrapper { display: table-cell; vertical-align: middle; }
+    #happy-birthday { margin: 0px auto; }
+    .page { background-color: #C0C0C0; }
+    .letter-wrapper { margin-left: 25px; height: 450px; position: relative; margin-top: 50px; }
+  </style>
+
+  <style type="text/css">
+    .H * { position: absolute; }
+    .H .left, .H .right { height: 100%; width: 100px; }
+
+    .H .right { margin-left: 350px; }
+    .H .center { height: 100px; width: 250px; margin-top: 175px; margin-left: 100px }
+  </style>
+
+  <style type="text/css">
+    .A *
+    {
+      position: absolute;
+    }
+    .A .left, .A .right { height: 100%; width: 100px; }
+    .A .left { border-top-left-radius: 100px; }
+    .A .center-top, .A .center-center { width: 250px; height: 100px; margin-left: 100px; }
+    .A .center-center { margin-top: 175px; }
+    .A .right { margin-left: 350px; border-top-right-radius: 100px; }
+  </style>
+
+  <style type="text/css">
+    .R *
+    {
+      position: absolute;
+    }
+    .R .left, .R .right { height: 100%; width: 100px; }
+    .R .center-top, .R .center-center { width: 250px; height: 100px; margin-left: 100px; }
+    .R .center-center { margin-top: 175px; }
+    .R .right { margin-left: 350px; }
+
+    .R .center-triangle
+    {
+      margin-left: 84.5%;
+      margin-top: 38%;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-right:50px solid #C0C0C0;
+      z-index: 1000;
+    }
+  </style>
+
+  <style type="text/css">
+    .S *
+    {
+      position: absolute;
+    }
+    .S .left, .S .right { width: 100px; height: 50%; }
+    .S .top, .S .center, .S .bottom { height: 100px; }
+    .S .top, .S .bottom { width: 350px; }
+    .S .center { width: 250px; }
+    .S .top, .S .center { margin-left: 100px; }
+    .S .center, .S .right { margin-top: 125px; }
+    .S .bottom { margin-top: 250px;  }
+    .S .right { margin-left: 350px; }
+  </style>
+
+  <style type="text/css">
+    .I *
+    {
+      position: absolute;
+    }
+
+    .I .top, .I .bottom { height: 100px; width: 350px; }
+    .I .center { height: 67%; width: 100px; margin-top: 100px; margin-left: 125px; }
+    .I .bottom { margin-top: 400px; }
+  </style>
+
+  <style type="text/css">
+    .T * {
+      position: absolute;
+    }
+
+    .T .top { height: 100px; width: 350px; }
+    .T .center { height: 80%; width: 100px; margin-top: 100px; margin-left: 125px; }
+  </style>
+
+  <style type="text/css">
+    #H1 * { background: url('./assets/imgs/H1.jpg') no-repeat fixed; background-position: 350px -35px; }
+    #A1 * { background: url('./assets/imgs/A1.jpg') no-repeat center center fixed; background-size: 40%; background-position: 681px;  }
+    #R * { background: url('./assets/imgs/R.jpg') no-repeat center center fixed; background-size: 125%; background-position: 1% 85%; }
+    #S * {  background: url('./assets/imgs/S.jpg') no-repeat center center fixed; background-size: 50%; background-position: 480px 40px; }
+    #H2 * { background: url('./assets/imgs/H2.jpg') no-repeat center center fixed; background-size: 60%; background-position: 355px; }
+    #I * { background: url('./assets/imgs/I.jpg') no-repeat center center fixed; background-position-x: 540px;  }
+    #T * { background: url('./assets/imgs/T.jpg') no-repeat center center fixed; background-position-x: 230px;  }
+    #A2 * { background: url('assets/imgs/A2.jpg') no-repeat center center fixed; background-position-x: 324px; }
+    #happy-birthday { margin: 0px auto; }
+    #front { background: url('assets/imgs/front.jpg') no-repeat center center / 90% 90%; }
+    #p1 { background: url('assets/imgs/1.jpg') no-repeat center center / 90% 90%; }
+    #p2 { background: url('assets/imgs/2.jpg') no-repeat center center / 90% 90%; }
+    #p3 { background: url('assets/imgs/3.jpg') no-repeat center center / 90% 90%; }
+    #p4 { background: url('assets/imgs/4.jpg') no-repeat center center / 90% 90%; }
+    #p5 { background: url('assets/imgs/5.jpg') no-repeat center center / 90% 90%; }
+    #p6 { background: url('assets/imgs/6.jpg') no-repeat center center / 90% 90%; }
+    #p7 { background: url('assets/imgs/7.jpg') no-repeat center center / 90% 90%; }
+    #p8 { background: url('assets/imgs/8.jpg') no-repeat center center / 90% 90%; }
+    #p9 { background: url('assets/imgs/9.jpg') no-repeat center center / 90% 90%; }
+    .page { border: 2px solid #888; border-radius: 10px; }
+    .full { height: 100%; width: 100%; }
+    .body { height: 100%; width: 100%; opacity: 0.4; background: url('assets/imgs/back.jpg') no-repeat center center; background-size: cover; position: absolute; }
+    .shadow { box-shadow: 0 4px 10px #666; }
+  </style>
+
+</head>
+
+<body>
+  <div class= 'body'></div>
+  <div class = 'site-wrapper'>
+    <div class= 'inner-site-wrapper'>
+      <div id = 'happy-birthday'>
+        <div>
+          <div id = 'front' class= 'full'></div>
+        </div>
+        <div>
+          <div id = 'p1' class= 'full'></div>
+        </div>
+        <div class= 'sheet'>
+          <div class= 'letter-wrapper H' id = 'H1'>
+            <div class = 'left'></div>
+            <div class = 'center'></div>
+            <div class = 'right'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p2' class= 'full'></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper A' id = 'A1'>
+            <div class = 'left'></div>
+            <div class = 'center-top'></div>
+            <div class = 'center-center'></div>
+            <div class = 'right'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p3' class= 'full'></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper R' id = 'R'>
+            <div class = 'left'></div>
+            <div class = 'center-top'></div>
+            <div class = 'center-triangle'></div>
+            <div class = 'center-center'></div>
+            <div class = 'right'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p4' class = 'full'></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper S' id = 'S'>
+            <div class = 'top'></div>
+            <div class = 'left'></div>
+            <div class = 'center'></div>
+            <div class = 'right'></div>
+            <div class = 'bottom'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p5' class = 'full'></div>
+        </div>
+        <div>
+          <div class= 'letter-wrapper H' id = 'H2'>
+            <div class = 'left'></div>
+            <div class = 'center'></div>
+            <div class = 'right'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p6' class = 'full'></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper I' id = 'I'>
+            <div class = 'top'></div>
+            <div class = 'center'></div>
+            <div class = 'bottom'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p7' class="full"></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper T' id = 'T'>
+            <div class = 'top'></div>
+            <div class = 'center'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p8' class= 'full'></div>
+        </div>
+        <div>
+          <div class = 'letter-wrapper A' id = 'A2'>
+            <div class = 'left'></div>
+            <div class = 'center-top'></div>
+            <div class = 'center-center'></div>
+            <div class = 'right'></div>
+          </div>
+        </div>
+        <div>
+          <div id = 'p9' class= 'full'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    $('#happy-birthday').turn({
+      height: 550,
+      width: 1000,
+      turnCorners: 'tl, tr'
+    });
+
+  </script>
+</body>
+
+</html>
